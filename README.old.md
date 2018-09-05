@@ -14,6 +14,8 @@ In this project, we will create a paint app that will allow us to practice passi
 - Run `npm start`.
 - In a seperate terminal, `cd` into the project directory.
 
+<img src="readme-assets/setup.png" />
+
 ## Step 1
 
 ### Summary
@@ -27,10 +29,15 @@ In this step, we will create the basic structure for the components we will be u
   - PaintCanvas.js
   - ColorPicker.js
   - Square.js
-- Create a class component for Square that renders a `div` with these styles `{ height: 10, width: 10, border: '1px solid black }`
-- Create a stateless functional component from ColorPicker that, for now, will render a div with 4 buttons that say 'blue', 'yellow', 'green', 'purple'.
-- Create a class component for PaintCanvas that will render both the ColorPicker component and the Square component.
-- In `src/App.js`, render the PaintCanvas component.
+- Create a `class component` for `Square.js` that renders a `div` with the following styles
+  - `{ height: 10, width: 10, border: '1px solid black }`
+- Create a `stateless functional component` for `ColorPicker.js` that renders a `div` with four buttons:
+  - The first button should say `blue`.
+  - The second button should say `yellow`.
+  - The third button should say `green`.
+  - The fourth button should say `purple`.
+- Create a `class component` for `PaintCanvas.js` that will render both the `ColorPicker` component and the `Square` component.
+- In `src/App.js`, render the `PaintCanvas` component.
 
 ### Solution
 
@@ -39,9 +46,9 @@ In this step, we will create the basic structure for the components we will be u
 <summary> <code> ./src/App.js </code> </summary>
 
 ```js
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import PaintCanvas from './components/PaintCanvas'
+import PaintCanvas from "./components/PaintCanvas";
 
 class App extends Component {
   render() {
@@ -54,7 +61,6 @@ class App extends Component {
 }
 
 export default App;
-}
 ```
 
 </details>
@@ -126,6 +132,8 @@ export default class Square extends Component {
 ```
 
 </details>
+
+<img src="readme-assets/step-1.png" />
 
 ## Step 2
 
